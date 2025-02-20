@@ -12,7 +12,7 @@ directory = os.path.join(os.getcwd(), "app", "utils", "weights")
 
 # Load the model
 PARAGRAPH_MODEL = YOLO(os.path.join(directory, "paragraph.pt"))  # Double backslashes
-READER = easyocr.Reader(["en", "fil"], recog_network="fil")
+READER = easyocr.Reader(["en"])
 
 
 def read_image(base64_string):
