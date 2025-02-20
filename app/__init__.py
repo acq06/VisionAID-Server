@@ -24,7 +24,7 @@ def create_app():
 
     @app.route("/")
     def home():
-        return "Hello, Flask with create_app!"
+        return "Vision AID"
 
     @app.post("/api/read")
     def read():
