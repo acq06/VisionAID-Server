@@ -35,7 +35,9 @@ def create_app():
 
         image = data.get("image")
         print(image)
-        return str(model.read_image(image))
+        text = str(model.read_image(image))
+        print(f"Text: {text}")
+        return text
 
     return app
 
